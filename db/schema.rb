@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_03_07_181536) do
+ActiveRecord::Schema[7.1].define(version: 2025_03_07_182912) do
   create_table "nba_players", force: :cascade do |t|
     t.string "name"
     t.string "position"
@@ -19,9 +19,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_07_181536) do
     t.integer "finals_appearances"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "finals_wons"
+    t.integer "finals_won"
     t.integer "finals_lost"
     t.float "finals_pts_avg"
+    t.string "conference"
   end
 
 end
